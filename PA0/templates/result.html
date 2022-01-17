@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+
+{% block input %}
+	{% if 'orig' in result %}
+		{{ result['orig'] }}
+	{% else %}		
+		input here
+	{% endif %}
+{% endblock %}
+
+{% block result %}
+  {{ result['result'] }}
+{% endblock %}
